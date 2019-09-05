@@ -1,15 +1,16 @@
 // ==UserScript==
 // @name         Collapsible Facebook Messenger Sidebar
-// @namespace    http://tampermonkey.net/
-// @version      2.2.0
+// @namespace    https://github.com/habeebweeb
 // @description  Adds a button to collapse the left sidebar
+// @version      2.2.0
 // @author       habeebweeb
+// @icon         https://static.xx.fbcdn.net/rsrc.php/y7/r/O6n_HQxozp9.ico
+// @license      GNU GPLv3; https://www.gnu.org/licenses/gpl-3.0.txt
 // @include      https://www.messenger.com/*
 // @include      https://www.facebook.com/messages/t/*
 // @include      https://m.me/*
 // @grant        GM.setValue
 // @grant        GM.getValue
-// @icon         https://static.xx.fbcdn.net/rsrc.php/y7/r/O6n_HQxozp9.ico
 // ==/UserScript==
 
 (() => {
