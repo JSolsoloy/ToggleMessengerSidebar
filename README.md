@@ -1,4 +1,4 @@
-# Toggle-Messenger-Sidebar
+# Toggle Messenger Sidebar
 
 Add a button to toggle Facebook Messenger's left sidebar
 

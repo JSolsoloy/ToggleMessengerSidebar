@@ -2,9 +2,9 @@
 // @name         Collapsible Facebook Messenger Sidebar
 // @namespace    https://github.com/habeebweeb
 // @description  Adds a button to collapse the left sidebar
-// @version      2.2.0
+// @version      2.3.0
 // @author       habeebweeb
-// @icon         https://static.xx.fbcdn.net/rsrc.php/y7/r/O6n_HQxozp9.ico
+// @icon         https://static.xx.fbcdn.net/rsrc.php/yg/r/4_vfHVmZ5XD.ico
 // @license      GNU GPLv3; https://www.gnu.org/licenses/gpl-3.0.txt
 // @include      https://www.messenger.com/*
 // @include      https://www.facebook.com/messages/t/*
@@ -24,6 +24,7 @@
     left: '_1enh',
     right: '_4_j5',
     conversationContainer: '_1t2u',
+    userInfoContainer: '_5743 _6y4y',
     hidden: 'hidden_elem'
   }
 
@@ -53,8 +54,8 @@
   }
 
   function addButton (sidebarButton) {
-    const header = document.getElementsByClassName(classes.header)[0]
-    header.appendChild(sidebarButton.button)
+    const userInfoContainer = document.getElementsByClassName(classes.userInfoContainer)[0]
+    userInfoContainer.insertBefore(sidebarButton.button, userInfoContainer.firstChild)
   }
 
   function Button (state) {
@@ -63,15 +64,11 @@
     this.button = (() => {
       const button = document.createElement('span')
       button.innerText = '☰'
-      button.style.left = '11px'
-      button.style.bottom = '13px'
-      button.style.width = '25px'
-      button.style.height = '25px'
-      button.style.position = 'absolute'
-      button.style['font-size'] = '1.6em'
-      button.style['line-height'] = '1em'
       button.style.cursor = 'pointer'
       button.style.color = '#888'
+      button.style.fontSize = '2em'
+      button.style.paddingRight = '0.3em'
+      button.style.paddingBottom = '0.1em'
       return button
     })()
     this.manageSidebar = function () {
