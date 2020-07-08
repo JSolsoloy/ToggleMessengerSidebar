@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Collapsible Facebook Messenger Sidebar
-// @namespace    https://github.com/habeebweeb
+// @namespace    https://github.com/JSolsoloy
 // @description  Adds a button to collapse the left sidebar
 // @version      2.3.0
-// @author       habeebweeb
+// @author       Joshua Solsoloy
 // @icon         https://static.xx.fbcdn.net/rsrc.php/yg/r/4_vfHVmZ5XD.ico
 // @license      GNU GPLv3; https://www.gnu.org/licenses/gpl-3.0.txt
 // @include      https://www.messenger.com/*
